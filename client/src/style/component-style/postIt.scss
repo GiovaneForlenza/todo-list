@@ -1,0 +1,27 @@
+.postIt-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 5px 1px #faf4f4;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.01);
+  }
+  .postIt-title {
+    font-size: 24px;
+    text-align: left;
+    font-weight: bold;
+  }
+  .postIt-content {
+    height: 85%;
+    margin-top: 5px;
+    p {
+      margin: 0;
+      display: inline-block;
+      text-align: left;
+    }
+  }
+}

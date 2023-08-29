@@ -1,0 +1,21 @@
+#corkBoard-container {
+  padding: 5px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 300px);
+  gap: 20px;
+  grid-auto-rows: minmax(300px, auto);
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(243, 243, 243);
+  border-radius: 10px;
+}

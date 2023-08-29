@@ -1,7 +1,9 @@
 import React from "react";
-import corkBoard from "../components/corkBoard";
 
-import "../style/page-style/home.css";
+import "../style/global.scss";
+
+import "../style/page-style/home.scss";
+import CorkBoard from "../components/corkBoard";
 
 function Home() {
   return (
@@ -12,8 +14,7 @@ function Home() {
           <h1>Sticky business</h1>
         </div>
         <div className="content">
-          <corkBoard />
-          asdasd
+          <CorkBoard />
         </div>
       </div>
     </div>
