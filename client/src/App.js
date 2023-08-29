@@ -1,11 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/Home";
+import { PostItContextProvider } from "./context/postItContext";
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <PostItContextProvider>
+        <Home />
+      </PostItContextProvider>
     </div>
   );
 }
