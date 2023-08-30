@@ -10,14 +10,7 @@ function CorkBoard() {
   return (
     <div id="corkBoard-container">
       {postItList.map((postIt) => {
-        return (
-          <PostIt
-            id={postIt.id}
-            title={postIt.title}
-            content={postIt.content}
-            bgColor={postIt.bgColor}
-          />
-        );
+        return <PostIt postIt={postIt} />;
       })}
     </div>
   );
