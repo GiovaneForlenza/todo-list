@@ -5,9 +5,12 @@ export const PostItContextProvider = (props) => {
   const [postItList, setPostItList] = useState([
     {
       id: 1,
-      title: "This is the title",
-      content:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit vitae est aperiam? Eos iusto dolores ipsum eaque provident aperiam, consectetur culpa animi. Quos exercitationem odio sint maiores placeat eligendi molestias!",
+      title: "Things to do for the project",
+      content: `- Update Postit Information when save 
+      - Fix items in list should be one per line
+      - Fix Edit items in list should be good
+      - Add Checkbox options
+      - Create way to add a new postit`,
       bgColor: "#faecb7",
     },
     {

@@ -49,6 +49,9 @@
           font-size: 25px;
           padding: 5px;
           box-sizing: border-box;
+          // border-radius: 5px;
+          border: none;
+          border-bottom: 1px solid #000;
         }
         textarea {
           resize: none;
@@ -59,9 +62,10 @@
         border: none;
         width: 300px;
         font-size: 30px;
-        background-color: #fff;
+        background-color: #22f0ff;
         box-shadow: 1px 1px 5px 1px #faf4f4;
         transition: all 0.2s;
+        border-radius: 5px;
         &:hover {
           cursor: pointer;
           transform: scale(1.05);
