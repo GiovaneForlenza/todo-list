@@ -6,11 +6,11 @@ export const PostItContextProvider = (props) => {
     {
       id: 1,
       title: "Things to do for the project",
-      content: `- Update Postit Information when save 
+      content: `- Update PostIt Information when save 
       - Fix items in list should be one per line
       - Fix Edit items in list should be good
       - Add Checkbox options
-      - Create way to add a new postit`,
+      - Create way to add a new postIt - DO THIS BEFORE EDITING AS IT'LL NEED TO UPDATE THE DB AND NOT AN ARRAY U DUMB FUCK`,
       bgColor: "#faecb7",
     },
     {
