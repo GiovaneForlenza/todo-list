@@ -7,6 +7,7 @@ import CorkBoard from "../components/CorkBoard";
 import SideBar from "../components/SideBar";
 import { ContentContext } from "../context/ContentContext";
 import EditPostIt from "../components/EditPostIt";
+import CreatePostIt from "../components/CreatePostIt";
 
 function Home() {
   const { showContent } = useContext(ContentContext);
@@ -18,7 +19,13 @@ function Home() {
       <div className="right">
         <div className="title">Sticky Business</div>
         <div className="content">
-          {showContent === "CorkBoard" ? <CorkBoard /> : <EditPostIt />}
+          {showContent === "CorkBoard" ? (
+            <CorkBoard />
+          ) : showContent === "Edit" ? (
+            <EditPostIt />
+          ) : (
+            <CreatePostIt />
+          )}
         </div>
       </div>
     </div>

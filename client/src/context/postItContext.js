@@ -41,13 +41,6 @@ export const PostItContextProvider = (props) => {
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit vitae est aperiam? Eos iusto dolores ipsum eaque provident aperiam, consectetur culpa animi. Quos exercitationem odio sint maiores placeat eligendi molestias!",
       bgColor: "#d5f1fb",
     },
-    {
-      id: 6,
-      title: "This is the title",
-      content:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit vitae est aperiam? Eos iusto dolores ipsum eaque provident aperiam, consectetur culpa animi. Quos exercitationem odio sint maiores placeat eligendi molestias!",
-      bgColor: "#faecb7",
-    },
   ]);
 
   return (

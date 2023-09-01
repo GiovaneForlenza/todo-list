@@ -5,6 +5,7 @@ import "../style/component-style/editPostIt.scss";
 import { BsArrowLeftCircle } from "react-icons/bs";
 import { ContentContext } from "../context/ContentContext";
 import FormLine from "./formElements/FormLine";
+import EditCreatePostItHeader from "./EditCreatePostItHeader";
 
 function EditPostIt() {
   const { showCorkBoard, editingPostIt, setEditingPostIt } =
@@ -17,20 +18,7 @@ function EditPostIt() {
 
   return (
     <div id="editPostIt-container">
-      <div className="header">
-        <div className="left">
-          <div
-            className="icon"
-            onClick={() => {
-              showCorkBoard();
-              setEditingPostIt({});
-            }}
-          >
-            <BsArrowLeftCircle />
-          </div>
-        </div>
-        <div className="right">Edit Post it</div>
-      </div>
+      <EditCreatePostItHeader/>
       <div className="editPostIt-content">
         <form onSubmit={(e) => handleSubmit(e)}>
           <FormLine

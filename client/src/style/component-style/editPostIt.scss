@@ -4,28 +4,7 @@
   align-items: stretch;
   justify-content: stretch;
   flex-direction: column;
-  .header {
-    border-bottom: 1px black solid;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    .left {
-      font-size: 35px;
-      width: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .icon {
-        &:hover {
-          cursor: pointer;
-        }
-      }
-    }
-    .right {
-      text-align: left;
-      font-size: 30px;
-    }
-  }
+  
   .editPostIt-content {
     padding-top: 10px;
     flex-grow: 1;
