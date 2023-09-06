@@ -4,16 +4,19 @@ export const ContentContext = createContext();
 export const ContentContextProvider = (props) => {
   const [showContent, setShowContent] = useState("CorkBoard");
   const [editingPostIt, setEditingPostIt] = useState();
-
+  const [isEditingPostIt, setIsEditingPostIt] = useState(false);
 
   function showCorkBoard() {
     setShowContent("CorkBoard");
+    setIsEditingPostIt(false);
   }
   function showEditPostIt(id) {
     setShowContent("Edit");
+    setIsEditingPostIt(true);
   }
   function showCreatePostIt() {
     setShowContent("Create");
+    setIsEditingPostIt(false);
   }
 
   return (
@@ -25,6 +28,7 @@ export const ContentContextProvider = (props) => {
         showContent,
         editingPostIt,
         setEditingPostIt,
+        isEditingPostIt,
       }}
     >
       {props.children}

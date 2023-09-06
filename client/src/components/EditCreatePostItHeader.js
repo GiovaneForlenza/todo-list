@@ -6,7 +6,8 @@ import { ContentContext } from "../context/ContentContext";
 import "../style/component-style/editCreatePostItHeader.scss";
 
 function EditCreatePostItHeader() {
-  const { showCorkBoard, setEditingPostIt } = useContext(ContentContext);
+  const { showCorkBoard, setEditingPostIt, isEditingPostIt } =
+    useContext(ContentContext);
   return (
     <div className="header">
       <div className="left">
@@ -20,7 +21,7 @@ function EditCreatePostItHeader() {
           <BsArrowLeftCircle />
         </div>
       </div>
-      <div className="right">Edit Post it</div>
+      <div className="right">{isEditingPostIt ? "Edit" : "Create"} Post it</div>
     </div>
   );
 }

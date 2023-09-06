@@ -2,13 +2,12 @@ import React, { useContext } from "react";
 
 import "../style/component-style/editPostIt.scss";
 
-import { BsArrowLeftCircle } from "react-icons/bs";
 import { ContentContext } from "../context/ContentContext";
 import FormLine from "./formElements/FormLine";
 import EditCreatePostItHeader from "./EditCreatePostItHeader";
 
 function EditPostIt() {
-  const { showCorkBoard, editingPostIt, setEditingPostIt } =
+  const { editingPostIt, setEditingPostIt } =
     useContext(ContentContext);
 
   function handleSubmit(e) {

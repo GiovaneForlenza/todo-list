@@ -1,22 +1,22 @@
 .header {
-    border-bottom: 1px black solid;
+  border-bottom: 1px #ccc solid;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  .left {
+    font-size: 35px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    .left {
-      font-size: 35px;
-      width: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .icon {
-        &:hover {
-          cursor: pointer;
-        }
+    .icon {
+      &:hover {
+        cursor: pointer;
       }
     }
-    .right {
-      text-align: left;
-      font-size: 30px;
-    }
   }
+  .right {
+    text-align: left;
+    font-size: 30px;
+  }
+}

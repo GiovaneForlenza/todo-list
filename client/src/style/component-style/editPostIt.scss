@@ -1,55 +1,11 @@
 #editPostIt-container {
   height: 100%;
   display: flex;
-  align-items: stretch;
-  justify-content: stretch;
   flex-direction: column;
-  
+
   .editPostIt-content {
     padding-top: 10px;
     flex-grow: 1;
-    .line {
-      margin: 20px 0;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-
-      .left {
-        font-size: 30px;
-        text-align: right;
-        flex-grow: 1;
-      }
-      .right {
-        padding: 0;
-        padding-left: 20px;
-        text-align: left;
-        input,
-        textarea {
-          font-size: 25px;
-          padding: 5px;
-          box-sizing: border-box;
-          // border-radius: 5px;
-          border: none;
-          border-bottom: 1px solid #000;
-        }
-        textarea {
-          resize: none;
-        }
-      }
-      input[type="submit"] {
-        padding: 10px;
-        border: none;
-        width: 300px;
-        font-size: 30px;
-        background-color: #22f0ff;
-        box-shadow: 1px 1px 5px 1px #faf4f4;
-        transition: all 0.2s;
-        border-radius: 5px;
-        &:hover {
-          cursor: pointer;
-          transform: scale(1.05);
-        }
-      }
-    }
+    display: flex;
   }
 }

@@ -1,0 +1,42 @@
+form {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.line {
+  margin: 10px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  box-sizing: border-box;
+  label {
+    font-size: 20px;
+  }
+  input,
+  textarea {
+    font-size: 25px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #efefef;
+    width: 100%;
+  }
+  textarea {
+    resize: none;
+  }
+}
+input[type="submit"] {
+  padding: 10px;
+  border: none;
+  font-size: 30px;
+  background-color: #22f0ff;
+  transition: all 0.2s;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+  }
+}
