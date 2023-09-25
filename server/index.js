@@ -6,13 +6,13 @@ const app = express();
 app.use(cors);
 
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "todo_list_postit",
+  host: "b60ejrwkvhbvbjv7yqmn-mysql.services.clever-cloud.com",
+  user: "uzgy4bwrrlixr1jy",
+  password: "tM1sCSlXKBUz6LEmbFP8",
+  database: "b60ejrwkvhbvbjv7yqmn",
 });
 
-app.get("/post_its", (req, res) => {
+app.get("/getPost_its", (req, res) => {
   const sql = "SELECT * FROM post_its";
   db.query(sql, (err, data) => {
     if (err) {
@@ -27,6 +27,6 @@ app.get("/", (req, res) => {
   return res.json("From backend");
 });
 
-app.listen(8081, () => {
+app.listen(3306, () => {
   console.log("Listening");
 });

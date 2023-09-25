@@ -1,19 +1,18 @@
-import React, {useContext} from "react";
+import React, { useContext, useEffect } from "react";
 import EditCreatePostItHeader from "./EditCreatePostItHeader";
 import { ContentContext } from "../context/ContentContext";
 import FormLine from "./formElements/FormLine";
 
-function CreatePostIt() {
-    const { editingPostIt, setEditingPostIt } = useContext(ContentContext);
+import axios from "axios";
 
-  function handleSubmit(e) {
-    e.preventDefault();
-  }
+function CreatePostIt() {
+  const { editingPostIt, setEditingPostIt } = useContext(ContentContext);
+
   return (
     <div id="createPostIt-container">
       <EditCreatePostItHeader />
       <div id="createPostIt-content">
-        <form onSubmit={(e) => handleSubmit(e)}>
+        {/* <form onSubmit={(e) => handleSubmit(e)}>
           <FormLine
             labelTitle={"Title"}
             inputType={"input"}
@@ -38,7 +37,7 @@ function CreatePostIt() {
           <div className="line boxShadow">
             <input type="submit" value="Save Changes" />
           </div>
-        </form>
+        </form> */}
       </div>
     </div>
   );
