@@ -1,15 +1,19 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 
 import PostIt from "./PostIt";
 
 import "../style/component-style/corkBoard.scss";
-import { PostItContext } from "../context/PostItContext";
+import {
+  LOCAL_STORAGE_KEYS,
+  LocalStorageContext,
+} from "../context/LocalStorageContext";
 
 function CorkBoard() {
-  const { postItList } = useContext(PostItContext);
+  const { getItemsFromList } = useContext(LocalStorageContext);
+
   return (
     <div id="corkBoard-container">
-      {postItList.map((postIt) => {
+      {getItemsFromList(LOCAL_STORAGE_KEYS.activePostIts).map((postIt) => {
         return <PostIt postIt={postIt} />;
       })}
     </div>

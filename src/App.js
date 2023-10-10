@@ -3,15 +3,18 @@ import "./App.css";
 import Home from "./pages/Home";
 import { PostItContextProvider } from "./context/PostItContext";
 import { ContentContextProvider } from "./context/ContentContext";
+import { LocalStorageContextProvider } from "./context/LocalStorageContext";
 
 function App() {
   return (
     <div className="App">
-      <ContentContextProvider>
-        <PostItContextProvider>
-          <Home />
-        </PostItContextProvider>
-      </ContentContextProvider>
+      <LocalStorageContextProvider>
+        <ContentContextProvider>
+          <PostItContextProvider>
+            <Home />
+          </PostItContextProvider>
+        </ContentContextProvider>
+      </LocalStorageContextProvider>
     </div>
   );
 }
