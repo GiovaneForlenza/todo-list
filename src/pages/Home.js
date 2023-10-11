@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useReducer } from "react";
 
 import "../style/global.scss";
 import "../style/page-style/home.scss";
@@ -11,6 +11,7 @@ import CreatePostIt from "../components/CreatePostIt";
 
 function Home() {
   const { showContent } = useContext(ContentContext);
+
   return (
     <div id="home-container">
       <div className="left">
